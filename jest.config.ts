@@ -3,9 +3,9 @@ import { Config } from "@jest/types";
 const config: Config.InitialOptions = {
 	verbose: true,
 	testEnvironment: "node",
-	setupFiles: ["dotenv/config"],
+	setupFiles: ["dotenv/config", "mongoose"],
 	preset: "ts-jest",
-	testPathDirs: ["./tests"],
+	rootDir: "./tests",
 };
 
 export default config;
